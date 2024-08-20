@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|| Spotify-clone ||</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/scomon.css">
+    <link rel="stylesheet" href="./css/sindex.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-container">
+            <header>
+                <div class="header-container">
+                    <div class="logo"><a href="index.html"><i class="fa-brands fa-spotify"></i> <span>Spotify</span></a></div>
+                    <nav>
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <aside>
+                <div class="bottom-header">
+                    <div class="library">
+                        <div class="library-head">
+                            <a href="#"><i class="fa-solid fa-list"></i>Playlist</a>
+                        </div>
+                        <div class="library-plus">
+                            <a href="#"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="plalist">
+                        <div class="playlist-cart-container">
+                            <div class="create-plalist">
+                                <h3>Create your first playlist</h3>
+                                <p>it's easy, we'll help you</p>
+                                <button>Create Playlist</button>
+                            </div>
+                            <div class="podcast">
+                                <h3>Let's find some podcasts to follow</h3>
+                                <p>We'll keep you updated on a new episode</p>
+                                <button>Browse Podcasts</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site-bar-links">
+                        <div class="site-list-item">
+                            <ul>
+                                <li><a href="#">Legal</a></li>
+                                <li><a href="#">Security&Privacy center</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookies</a></li>
+                                <li><a href="#">About adds</a></li>
+                                <li><a href="#">Accessibility</a></li>
+                                <li><a href="#">Cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="english-botton">
+                        <button><i class="fa-solid fa-globe"></i><span>English</span></button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="right-container" >
+            <div class="navbar-container"  id="navbar">
+                <span id="toggel"><i class="fa-solid fa-bars"></i></span>
+                <div class="nav-bar">
+                    <div class="left-item">
+                        <div class="left-nav-icon">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="left-nav-icon">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="right-item">
+                        <div>
+                            <button>Sign Up</button>
+                        </div>
+                        <div>
+                            <button>Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-inner-container" id="scrollContainer" onscroll="stickyNavbar()">
+                <main>
+                    <section id="featured">
+                        <div class="featured-container">
+                            <div class="feature-headind"><h2>Populer Artists</h2></div>
+                        </div>
+                        <div class="featured-item">
+                            <div class="featured-cart" >
+                                <div class="play-btn">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="cart-image">
+                                    <img src="./assets/artists/arjit.jfif" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>Arjit Singh</h3>
+                                   <p>Artist</p>
+                                </div>
+                            </div>
+                            <div class="featured-cart" >
+                                <div class="play-btn">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="cart-image">
+                                    <img src="./assets/artists/a_r_rahman.jfif" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>A R Rahman</h3>
+                                   <p>Artist</p>
+                                </div>
+                            </div>
+                            <div class="featured-cart" >
+                                <div class="play-btn">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="cart-image">
+                                    <img src="./assets/artists/pritam.jfif" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>Pritam Chakraborty</h3>
+                                   <p>Artist</p>
+                                </div>
+                            </div>
+                            <div class="featured-cart" >
+                                <div class="play-btn">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="cart-image">
+                                    <img src="./assets/artists/shachin_jigar.jfif" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>Shachin Jigar</h3>
+                                   <p>Artist</p>
+                                </div>
+                            </div>
+                            <div class="featured-cart" >
+                                <div class="play-btn">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="cart-image">
+                                    <img src="./assets/artists/vishal.jfif" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>Vishal Mishra</h3>
+                                   <p>Artist</p>
+                                </div>
+                            </div>
+                            <div class="featured-cart" >
+                                <div class="play-btn">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="cart-image">
+                                    <img src="./assets/artists/ayushmaan.jpg" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3>Ayushman khurana</h3>
+                                   <p>Artist</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </section>
+                    <section id="musicPlayer" class="featured">
+                        <div class="featured-container">
+                            <div class="feature-headind"><h2>Populer Albums</h2></div>
+                        </div>
+                        <div class="musicPlayer-item featured-item">
+                            
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/lapata.jpg" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>Laapataa Ladies</h3>
+                                   <p>Sparsh Shrivastava, Nitanshi Goel..</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/ranjhna.jpg" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>Raanjhanaa</h3>
+                                   <p>Dhanush, Shonam Kapoor..</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/subhmangal.avif" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3> Shubh Mangal</h3>
+                                   <p>Ayushman khurana, Pankhuri..</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/dolajb.webp" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>Do labjo ki kahani</h3>
+                                   <p>Randeep Hodda, Kajal</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/ashique2.jfif" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3>Aashiqui 2</h3>
+                                    <p>Aditya Roy, Shraddha Kapoor..</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/tamasha.webp" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>Tamasha</h3>
+                                   <p>Ranbir Kapoor, Deepika Padukone</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="playlistGrid">
+                        
+
+
+                        <div class="featured-container">
+                            <div class="feature-headind"><h2>Populer Radio</h2></div>
+                        </div>
+                        <div class="musicPlayer-item featured-item">
+                            
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/ashique2.jfif" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>Aashiqui 2</h3>
+                                   <p>Aditya Roy, Shraddha Kapoor..</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/lapata.jpg" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3>Laapataa Ladies</h3>
+                                    <p>Sparsh Shrivastava, Nitanshi Goel..</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/rock.webp" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>Rocky Aur Rani Kii Prem Kahaani </h3>
+                                   <p>Ranveer singh, Aliya..</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/rockstar.jpeg" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3>Rockstar</h3>
+                                    <p>Ranveer Kapoor, Anushka Sharma</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/hasheen.jpeg" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3>Fir Ayee Hasheen Dilruba</h3>
+                                    <p>Sani Koshal, Tapshi pannu</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/subhmangal.avif" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3> Shubh Mangal</h3>
+                                    <p>Ayushman khurana, Pankhuri..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="playlistDetail">
+                        <!-- Playlist Detail Page content -->
+                        <div class="featured-container">
+                            <div class="feature-headind"><h2>Zzzzzzzz</h2></div>
+                        </div>
+                        <div class="musicPlayer-item featured-item">
+                            
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/idiot.jpeg" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>3 Idiot</h3>
+                                   <p>Amir Khan, Karina Kapoor</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/rockstar.jpeg" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>Rockstar</h3>
+                                   <p>Ranveer Kapoor, Anushka Sharma</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/dolajb.webp" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3>Do labjo ki kahani</h3>
+                                    <p>Randeep Hodda, Kajal</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/rock.webp" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                     <h3>Rockstar</h3>
+                                   <p>Ranbir Kapoor, Anushka Sharma</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/ashique2.jfif" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3>Aashiqui 2</h3>
+                                    <p>Aditya Roy, Shraddha Kapoor..</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/ranjhna.jpg" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3>Raanjhanaa</h3>
+                                    <p>Dhanush, Shonam Kapoor..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="browse">
+                        
+
+                        <div class="featured-container">
+                            <div class="feature-headind"><h2>Tranding songs</h2></div>
+                        </div>
+                        <div class="musicPlayer-item featured-item">
+                            
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/rock.webp" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3>Rocky Aur Rani Kii Prem Kahaani </h3>
+                                   <p>Ranveer singh, Aliya..</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/subhmangal.avif" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3> Shubh Mangal</h3>
+                                    <p>Ayushman khurana, Pankhuri..</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/dolajb.webp" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                   <h3>Do labjo ki kahani</h3>
+                                   <p>Randeep Hodda, Kajal</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/tamasha.webp" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3>Tamasha</h3>
+                                    <p>Ranbir Kapoor, Deepika Padukone</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/subhmangal.avif" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3> Shubh Mangal</h3>
+                                    <p>Ayushman khurana, Pankhuri..</p>
+                                </div>
+                            </div>
+                            <div class="musicPlayer-cart featured-cart" >
+                                <div class="play-btn-bottom">
+                                    <i class="fa solid fa-play"></i>
+                                </div>
+                                <div class="musicPlayer-cart-image">
+                                    <img src="./assets/albums/ashique2.jfif" alt="">
+                                </div>
+                                <div class="cart-contents">
+                                    <h3>Aashiqui 2</h3>
+                                    <p>Aditya Roy, Shraddha Kapoor..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                <footer class="footer">
+                    <div class="footer-col">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">For the Record</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Community</h3>
+                        <ul>
+                            <li><a href="#">For Artists</a></li>
+                            <li><a href="#">Developers</a></li>
+                            <li><a href="#">Advertising</a></li>
+                            <li><a href="#">Visitor</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Free Mobile App</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Spotify Plan</h3>
+                        <ul>
+                            <li><a href="#">Premium Individual</a></li>
+                            <li><a href="#">Premium Duo</a></li>
+                            <li><a href="#">Premium Family</a></li>
+                            <li><a href="#">Spotify Free</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Follow Us</h3>
+                        <div class="footer-social">
+                            <a href="#">facebook</a>
+                            <a href="#">Twiter</a>
+                            <a href="#">instagram</a>
+                        </div>
+                    </div>
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+</body>
+
+</html>
